@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+  <title>Arceus X | Sign Up</title>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Inconsolata:wght@400;500&family=Open+Sans&family=Roboto+Mono&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #E2E2E2;
+  }
+  
+  body{
+    background: linear-gradient(180deg, rgba(18,18,18,1) 25%, rgba(56,15,15,1) 50%, rgba(30,30,30,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container{
+    max-width: 90%;
+    min-height: 58%;
+    background-color: rgba(17, 17, 17, 0.6);
+    border-radius: 1%;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .icon{
+    width: 22%;
+    height: auto;
+    margin-top: 5%;
+  }
+  
+  h2{
+    margin-top: 3%;
+  }
+  
+  input{
+    width: 85%;
+    min-height: 2rem;
+    color: #1E1E1E;
+    margin-top: 6%;
+    border: none;
+    border-left: solid 5px white;
+  }
+  
+  a p{
+    float: left;
+    text-decoration: none;
+    color: #E5E5E5;
+    margin-top: 6%;
+    margin-left: 1.8rem;
+    border: none;
+    clear: both;
+  }
+  
+  input[type="submit"]{
+    background-color: #CA0000;
+    border: none;
+    border-radius: 3.5%;
+    width: 30%;
+    height: 2rem;
+    font-weight: 800;
+    font-size: larger;
+    color: #111111;
+    clear: both;
+    margin-top: 20%;
+    margin-bottom: 4%;
+  }
+  
+  .button:hover{
+    background-color: #076300;
+  }
+  
+  span{
+    color: #D40000;
+    font-weight: 600;
+    float: left;
+    margin-left: 8%;
+    margin-top: 2%;
+    font-size: 70%;
+    opacity: 0;
+  }
+  
+  .username{
+    margin-bottom: 5%;
+  }
+</style>
+
+<body>
+  
+  <div class="container">
+    <center>
+      <img src="Logo.png" class="icon">
+      <h2>Create an Account!</h2>
+      <form ="signUp-form">
+      <input class="username" id="inputUsername" placeholder="Axon_Adam">
+      <input id="inputEmail" type="email" placeholder="youremail@gmail.com" class="email">
+      <input id="inputPassword" type="password" placeholder="wonderful@123" class="password">
+      
+      <a href="#" ><p>Terms and Conditions</p></a>
+      <input type="submit" id="signUp" placeholder="Sign Up">
+      </form>
+      </center>
+  </div>
+  
+  <script src="main.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAsJBCf_mKnQaanTrkuQCCJ8vKQ4QLiVSM",
+    authDomain: "arceus-x-923d9.firebaseapp.com",
+    projectId: "arceus-x-923d9",
+    storageBucket: "arceus-x-923d9.appspot.com",
+    messagingSenderId: "632689625483",
+    appId: "1:632689625483:web:c652b46b332b99ddce878e",
+    measurementId: "G-94R9B98Y07"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+
+</html>
